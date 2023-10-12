@@ -1,1 +1,1 @@
-(Vignette Project)[https://lichchang.github.io/Vignette_R/]
+[Vignette Project](https://lichchang.github.io/Vignette_R/)
