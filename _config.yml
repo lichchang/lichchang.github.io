@@ -22,13 +22,14 @@ repository               : "lichchang/lichchang.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "aaprofile.jpg"
   name             : "LiChia (Jerry) Chang"
   pronouns         : # example: "she/her"  
   bio              : "Computer Science PhD"
   location         : "Raleigh NC"
   employer         : "NC State University"
   email            : "lchang2@ncsu.edu" 
+  linkedin         : "https://www.linkedin.com/in/lichia-chang-8949b8242/"
 
   # Academic websites
   # arxiv            : # URL - Update with the correct link to your profile
