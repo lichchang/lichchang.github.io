@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/speech_conference
 excerpt: 'This study proposes a novel robust speech feature extraction technique to improve speech recognition performance in noisy environments. This novel method exploits the information provided by the original acoustic model in the automatic speech recognition (ASR) system to learn a deep neural network that converts the original speech features.'
 date: 2022-06-20
-venue: 'Appl. Syst. Innov. 2022'
+venue: 'Appl. Syst. Innov. Volume 5, Issue 4'
 paperurl: 'https://doi.org/10.3390/asi5040071'
 citation: 'Chang, L.-C.; Hung, J.-W. A Preliminary Study of Robust Speech Feature Extraction Based on Maximizing the Probability of States in Deep Acoustic Models. Appl. Syst. Innov. 2022, 5, 71.'
 ---
