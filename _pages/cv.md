@@ -33,12 +33,12 @@ Work experience
 
 Research
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Aug. 2024 - present: Embodied AI + Model Compression
+  - Compressing vision transformer models using post-training quantization, reducing precision from Float16 to Int8 without compromising performance, and deployed it on a cooperative multi-robot application.
+* Dec. 2023 - May. 2024: Agentic AI + RAG
+  - Developed a medical chatbot that answers concerns by fetching the latest theses and utilizing RAG search for accurate information.
+* Sep. 2023 - Dec. 2023: Trustworthy AI
+  - Conducted research on interpretability, ethics, and bias in generative models deployed on a K-12 learning assistance platform.
 
 
 Skills
@@ -49,25 +49,3 @@ Skills
   * Sub-skill 2.2
   * Sub-skill 2.3
 * Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
