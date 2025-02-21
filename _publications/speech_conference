@@ -1,7 +1,7 @@
 ---
 title: "The preliminary study of robust speech feature extraction based on maximizing the probability of states in deep acoustic models"
 collection: publications
-category: manuscripts
+category: Journal Articles
 permalink: /publication/speech_conference
 excerpt: 'This study proposes a novel robust speech feature extraction technique to improve speech recognition performance in noisy environments. This novel method exploits the information provided by the original acoustic model in the automatic speech recognition (ASR) system to learn a deep neural network that converts the original speech features.'
 date: 2022-06-20
