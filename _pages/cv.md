@@ -24,6 +24,7 @@ Work experience
   * Accelerated an LLM-based chatbot, achieving an 87.5% reduction in runtime for answering frequently asked questions.
 
 * Sep. 2020 - Aug. 2022: Junior Data Scientist at Shinewave (Subsidiary of ASUS), Taipei
+  
   Responsible for anomaly detection and root cause analysis for fuse production line
   ­* Conducted anomaly detection and root cause analysis for developing early warning systems in real-time production monitoring system to detect defectives
   * Developed the end-to-end analytic product development process, from data extraction in monitoring system, streaming data pipelines design, customized dashboard for visualization, and data narrative writing.
