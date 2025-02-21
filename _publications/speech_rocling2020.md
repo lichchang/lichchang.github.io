@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/speech_rocling2020
 excerpt: 'Received the Best Paper Nomination ROCLING 2020'
-date: 2020
+date: 2020-09-26
 venue: ' Proceedings of the 32nd Conference on Computational Linguistics and Speech Processing (ROCLING 2020)'
 paperurl: 'https://aclanthology.org/2020.rocling-1.14/'
 citation: 'Li-chia Chang and Jeih-weih Hung. 2020. The preliminary study of robust speech feature extraction based on maximizing the accuracy of states in deep acoustic models. In Proceedings of the 32nd Conference on Computational Linguistics and Speech Processing (ROCLING 2020), pages 118–119, Taipei, Taiwan. The Association for Computational Linguistics and Chinese Language Processing (ACLCLP).'
