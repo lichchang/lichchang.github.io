@@ -34,7 +34,8 @@ Work experience
 Research
 ======
 * Aug. 2024 - present: Embodied AI + Model Compression
-  - Compressing vision transformer models using post-training quantization, reducing precision from Float16 to Int8 without compromising performance, and deployed it on a cooperative multi-robot application.
+  - Compressing Vision Transformer models using real post-training quantization, reducing precision from Float16 to Int8 by incorporating CUDA extensions to achieve 2× faster model inference.
+  - Deploying quantized vision models on Limo Pro cars, enhancing robustness and efficiency in multi-robot applications through a tailored W8A8 quantization method.
 * Dec. 2023 - May. 2024: Agentic AI + RAG
   - Developed a medical chatbot that answers concerns by fetching the latest theses and utilizing RAG search for accurate information.
 * Sep. 2023 - Dec. 2023: Trustworthy AI
