@@ -7,16 +7,28 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year Ph.D. student at NC State University CSC, advised by Prof. Dongkuan Xu.
+# Personal Homepage
 
-I earned a Master's in Computer Science from NC State University and another Master of Science from National Chi Nan University in Taiwan back in 2020.
+## About Me
 
-My research interests lie in Efficient Embodied AI and Agentic AI systems for Large Language Models.
+I am a **first-year Ph.D. student** at **NC State University**, Department of Computer Science, advised by **Prof. Dongkuan Xu**.
 
+I earned:
+- A **Master's in Computer Science** from **NC State University**.
+- A **Master of Science** from **National Chi Nan University**, Taiwan (2020).
 
+## Research Interests
+My research focuses on **Efficient Embodied AI** and **Agentic AI systems** for **Large Language Models (LLMs)**.
 
-I believe that AGI is within reach and could become a reality in the next few years. In my view, multimodal
-models represent the next major breakthrough in the AI field, enabling LLMs to develop reasoning
-capabilities for actions and movements through video data and interactive simulations. To contribute to this
-vision, my research focuses on enhancing the reasoning capabilities of LLMs and optimizing multimodal
-model efficiency, with an emphasis on embodied AI where LLMs are trained in simulation environments.
+## Vision & Research Goals
+I strongly believe that **AGI (Artificial General Intelligence) is within reach** and could become a reality in the next few years.
+
+### Key Perspectives:
+- **Multimodal models** represent the next major breakthrough in AI.
+- LLMs can develop **reasoning capabilities** for actions and movements through **video data** and **interactive simulations**.
+- My research aims to **enhance LLM reasoning** and **optimize multimodal model efficiency**.
+- I focus on **embodied AI**, where LLMs are trained in **simulation environments** to improve real-world adaptability.
+
+## Contact
+Feel free to connect with me if you're interested in collaborating or discussing related topics!
+
