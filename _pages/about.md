@@ -8,23 +8,17 @@ redirect_from:
 ---
 
 
-## About Me
-
 I am a **first-year Ph.D. student** at **NC State University**, Department of Computer Science, advised by **Prof. Dongkuan Xu**.
 
 
-## Research Interests
 My research focuses on **Efficient Embodied AI** and **Agentic AI systems** for **Large Language Models (LLMs)**.
 
-## Vision & Research Goals
+
 I strongly believe that **AGI (Artificial General Intelligence) is within reach** and could become a reality in the next few years.
 
-### Key Perspectives:
-- **Multimodal models** represent the next major breakthrough in AI.
-- LLMs can develop **reasoning capabilities** for actions and movements through **video data** and **interactive simulations**.
-- My research aims to **enhance LLM reasoning** and **optimize multimodal model efficiency**.
-- I focus on **embodied AI**, where LLMs are trained in **simulation environments** to improve real-world adaptability.
 
-## Contact
+My research aims to **enhance LLM reasoning** and **optimize multimodal model efficiency**.
+I focus on **embodied AI**, where LLMs are trained in **simulation environments** to improve real-world adaptability.
+
 Feel free to connect with me if you're interested in collaborating or discussing related topics!
 
