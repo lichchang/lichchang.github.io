@@ -7,15 +7,11 @@ redirect_from:
   - /about.html
 ---
 
-# Personal Homepage
 
 ## About Me
 
 I am a **first-year Ph.D. student** at **NC State University**, Department of Computer Science, advised by **Prof. Dongkuan Xu**.
 
-I earned:
-- A **Master's in Computer Science** from **NC State University**.
-- A **Master of Science** from **National Chi Nan University**, Taiwan (2020).
 
 ## Research Interests
 My research focuses on **Efficient Embodied AI** and **Agentic AI systems** for **Large Language Models (LLMs)**.
