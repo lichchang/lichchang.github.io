@@ -17,11 +17,11 @@ Quantization is a widely used technique to reduce the memory footprint and compu
 
 ## Understanding Fake Quantization & Real quantization
 
-*_Fake quantization_* is a technique used to simulate the effects of low-bit precision computations while still using floating-point arithmetic. This helps the model learn to be robust to quantization errors before actual deployment in integer precision. It inserts quantization and dequantization operations into the model layers while still using floating-point precision. This allows the model to adapt to lower-bit representations before actual deployment. In other words, **quantization implementations that don’t use additional CUDA tools to support low-bit matrix manipulation are all considered 'fake' ones.**
+***Fake quantization*** is a technique used to simulate the effects of low-bit precision computations while still using floating-point arithmetic. This helps the model learn to be robust to quantization errors before actual deployment in integer precision. It inserts quantization and dequantization operations into the model layers while still using floating-point precision. This allows the model to adapt to lower-bit representations before actual deployment. In other words, quantization implementations that don’t use additional CUDA tools to support low-bit matrix manipulation are all considered 'fake' ones.
 
 
 
-*_Real quantization_*, unlike fake quantization, converts trained weights and activations to lower precision at inference time. This is done by replacing each layer in the model with layers that incorporate CUDA-supported matrix manipulation (GEMM). As you can see below, every layer has been replaced with a GEMM version.
+***Real quantization***, unlike fake quantization, converts trained weights and activations to lower precision at inference time. This is done by replacing each layer in the model with layers that incorporate CUDA-supported matrix manipulation (GEMM). As you can see below, every layer has been replaced with a GEMM version.
 
 
 An original self-attention block in OPT model:
