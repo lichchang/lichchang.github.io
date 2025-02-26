@@ -13,7 +13,7 @@ tags:
 
 ## Introduction
 
-Quantization is a widely used technique to reduce the memory footprint and computational cost of AI models. However, a common misconception is that **fake quantization** can directly lead to an acceleration in inference time. In this article, we explore why fake quantization does not yield inference speedup and what actually contributes to runtime improvements.
+Quantization (specifically referring to post-training quantization in this article) is a widely used technique to reduce the memory footprint and computational cost of AI models. However, a common misconception is that **fake quantization** can directly lead to an acceleration in inference time. In this article, we explore why fake quantization does not yield inference speedup and what actually contributes to runtime improvements.
 
 ## Understanding Fake Quantization & Real quantization
 
@@ -24,7 +24,7 @@ Quantization is a widely used technique to reduce the memory footprint and compu
 ***Real quantization***, unlike fake quantization, converts trained weights and activations to lower precision at inference time. This is done by replacing each layer in the model with layers that incorporate CUDA-supported matrix manipulation (GEMM). As you can see below, every layer has been replaced with a GEMM version.
 
 
-An original self-attention block in OPT model:
+A self-attention block in the OPT model. It would be exactly the same as this one when applied after fake quantization.
 ``` 
 OPTDecoderLayer(
   (self_attn): OPTAttention(
@@ -41,7 +41,8 @@ OPTDecoderLayer(
 )
 ```
 
-A real quantization version:
+A real quantization version (applied SmoothQuant W8A8 [^1]):
+[^1]:https://github.com/mit-han-lab/smoothquant
 ``` 
 Int8OPTDecoderLayer(
   (self_attn): Int8OPTAttention(
@@ -69,50 +70,6 @@ Int8OPTDecoderLayer(
 
 **Key points about real quantization:**
 - It changes the storage format and activation values to lower-bit representations (e.g., Int8, Int4).
-- All computations are performed using GEMM tools, which support low-precision operations.
+- All computations are performed using GEMM tools, which support low-precision operations (e.g. BMM_S8T_S8N_F32T).
 - The entire model structure is rewritten into a tailored low-bit version.
-  
 
-## What Actually Affects Inference Speed?
-
-### 1. True Quantization (Post-Training Quantization - PTQ)
-
-Unlike fake quantization, true quantization converts the trained weights and activations into lower precision (e.g., INT8) at inference time. This results in:
-- **Reduced memory bandwidth** (smaller model size, less data transfer)
-- **Efficient integer operations** (on hardware that supports INT8 acceleration)
-
-### 2. Hardware Support
-
-Inference acceleration depends on hardware that can leverage INT8 computations efficiently. CPUs with AVX-512 VNNI, NVIDIA TensorRT, and TPUs optimize integer computations to achieve real speedup.
-
-![Hardware Accelerated Inference](https://upload.wikimedia.org/wikipedia/commons/4/49/TPU_v3_pod.png)
-
-### 3. Framework and Backend Optimizations
-
-Deep learning frameworks such as TensorFlow, PyTorch, and ONNXRuntime provide optimizations specifically for quantized models. However, these optimizations require **true quantization**, not just fake quantization.
-
-## Experimental Evidence
-
-We tested a ResNet-18 model under three configurations:
-1. **FP32 (Baseline)**: Standard floating-point inference.
-2. **Fake Quantized (QAT)**: Model trained with fake quantization but deployed in FP32.
-3. **INT8 Quantized (PTQ)**: Model converted to true INT8 using TensorRT.
-
-**Results (Inference Speed in ms):**
-
-| Model Type  | CPU (ms) | GPU (ms) |
-|------------|---------|---------|
-| FP32       | 22.5    | 8.4     |
-| Fake QAT   | 22.3    | 8.3     |
-| INT8 PTQ   | 12.1    | 3.2     |
-
-As seen in the table, **fake quantization does not significantly improve inference time**. Only true INT8 quantization provides meaningful speedup.
-
-## Conclusion
-
-Fake quantization serves an essential role in preparing models for real quantization, but it does not inherently accelerate inference. To achieve actual speedup, one must:
-- Perform true post-training quantization (PTQ) or quantization-aware training (QAT) with final INT8 conversion.
-- Utilize hardware that supports efficient integer operations.
-- Ensure deep learning frameworks apply optimized execution paths for quantized models.
-
-Thus, if you're aiming for a faster model, **don't stop at fake quantization—go all the way to real INT8 deployment!**
