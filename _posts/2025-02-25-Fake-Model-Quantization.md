@@ -23,7 +23,9 @@ Quantization is a widely used technique to reduce the memory footprint and compu
 
 *_Real quantization_*, unlike fake quantization, converts trained weights and activations to lower precision at inference time. This is done by replacing each layer in the model with layers that incorporate CUDA-supported matrix manipulation (GEMM). As you can see below, every layer has been replaced with a GEMM version.
 
-``` An original self-attention block in OPT model
+
+An original self-attention block in OPT model:
+``` 
 OPTDecoderLayer(
   (self_attn): OPTAttention(
     (k_proj): Linear(in_features=2560, out_features=2560, bias=True)
@@ -39,8 +41,8 @@ OPTDecoderLayer(
 )
 ```
 
-
-``` A real quantization version
+A real quantization version:
+``` 
 Int8OPTDecoderLayer(
   (self_attn): Int8OPTAttention(
     (qk_bmm): BMM_S8T_S8N_F32T()
