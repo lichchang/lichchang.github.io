@@ -66,6 +66,13 @@ Int8OPTDecoderLayer(
 - Computation is still performed in floating-point precision (e.g., FP32 or BF16).
 - The model structure remains unchanged, meaning no real inference-time optimization occurs.
 
+
+**Key points about real quantization:**
+- It changes the storage format and activation values to lower-bit representations (e.g., Int8, Int4).
+- All computations are performed using GEMM tools, which support low-precision operations.
+- The entire model structure is rewritten into a tailored low-bit version.
+  
+
 ## What Actually Affects Inference Speed?
 
 ### 1. True Quantization (Post-Training Quantization - PTQ)
