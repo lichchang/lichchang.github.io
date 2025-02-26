@@ -21,6 +21,21 @@ Fake quantization is a technique used to simulate the effects of low-bit precisi
 
 
 Real quantization, unlike fake quantization, converts trained weights and activations to lower precision at inference time. This is done by replacing each layer in the model with layers that incorporate CUDA-supported matrix manipulation (GEMM). 
+```
+OPTDecoderLayer(
+  (self_attn): OPTAttention(
+    (k_proj): Linear(in_features=2560, out_features=2560, bias=True)
+    (v_proj): Linear(in_features=2560, out_features=2560, bias=True)
+    (q_proj): Linear(in_features=2560, out_features=2560, bias=True)
+    (out_proj): Linear(in_features=2560, out_features=2560, bias=True)
+  )
+  (activation_fn): ReLU()
+  (self_attn_layer_norm): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+  (fc1): Linear(in_features=2560, out_features=10240, bias=True)
+  (fc2): Linear(in_features=10240, out_features=2560, bias=True)
+  (final_layer_norm): LayerNorm((2560,), eps=1e-05, elementwise_affine=True)
+)
+```
 <img src="../images/OPT_before_quant.png" width="45%"> <img src="../images/OPT_after_quant.png" width="45%">
 
 
