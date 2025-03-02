@@ -41,3 +41,9 @@ Work experience
   ­* Conducted anomaly detection and root cause analysis for developing early warning systems in real-time production monitoring system to detect defectives
   * Developed the end-to-end analytic product development process, from data extraction in monitoring system, streaming data pipelines design, customized dashboard for visualization, and data narrative writing.
   * Analyzed abnormal data from monitoring systems to identify human errors, designing visualization reports to provide actionable insights for factory managers in manufacturing industry.
+ 
+
+Academic memberships
+======
+_Reviewer_
+* Edge AAAI 2025 Spring Symposium, GenAI@Edge: Empowering Generative AI (Link)[https://sites.google.com/view/gen-ai-edge/]
