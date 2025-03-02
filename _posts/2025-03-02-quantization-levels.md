@@ -1,5 +1,5 @@
 ---
-title: 'How do you determine the appropriate quantization precision levels for your Large language models?'
+title: 'quantization levels'
 date: 2025-03-02
 permalink: /posts/2025/03/quantization-levels/
 tags:
