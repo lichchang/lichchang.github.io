@@ -46,4 +46,4 @@ Work experience
 Academic memberships
 ======
 _Reviewer_
-* Edge AAAI 2025 Spring Symposium, GenAI@Edge: Empowering Generative AI (Link)[https://sites.google.com/view/gen-ai-edge/]
+* Edge AAAI 2025 Spring Symposium, GenAI@Edge: Empowering Generative AI [Link](https://sites.google.com/view/gen-ai-edge/)
