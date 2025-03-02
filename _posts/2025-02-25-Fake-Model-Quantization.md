@@ -15,7 +15,7 @@ tags:
 
 Quantization (specifically referring to post-training quantization in this article) is a widely used technique to reduce the memory footprint and computational cost of AI models. However, a common misconception is that **fake quantization** can directly lead to an acceleration in inference time. In this article, we explore why fake quantization does not yield inference speedup and what actually contributes to runtime improvements.
 
-## Understanding Fake Quantization & Real quantization
+## Fake Quantization & Real quantization
 
 ***Fake quantization*** is a technique used to simulate the effects of low-bit precision computations while still using floating-point arithmetic. This helps the model learn to be robust to quantization errors before actual deployment in integer precision. It inserts quantization and dequantization operations into the model layers while still using floating-point precision. This allows the model to adapt to lower-bit representations before actual deployment. In other words, quantization implementations that don’t use additional CUDA tools to support low-bit matrix manipulation are all considered 'fake' ones.
 
