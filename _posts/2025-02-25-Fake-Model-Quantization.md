@@ -41,8 +41,7 @@ OPTDecoderLayer(
 )
 ```
 
-A real quantization version (applied SmoothQuant W8A8 [^1]):
-[^1]:https://github.com/mit-han-lab/smoothquant
+A real quantization version (applied [SmoothQuant W8A8](https://github.com/mit-han-lab/smoothquant)):
 ``` 
 Int8OPTDecoderLayer(
   (self_attn): Int8OPTAttention(
